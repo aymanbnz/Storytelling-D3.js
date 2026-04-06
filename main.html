@@ -1,0 +1,972 @@
+<html lang="en" data-critters-container="">
+<head>
+    <meta charset="utf-8">
+    <title>Sinic</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- css BDC -->
+    <link href="https://cdn.www.gov.co/layout-govco-v5/all.css" rel="stylesheet">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet"
+          crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <style>@font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBw3uBZFI.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBynuBZFI.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBwXuBZFI.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBwHuBZFI.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: italic;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0OMImSLYBIv1o4X1M8cce4OdVisMz5nZRqy6cmmmU3t3NeCAAFOvV9SNjBznuB.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJDxzGOF.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJnxzGOF.woff2) format('woff2');
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJLxzGOF.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJPxzGOF.woff2) format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 200 1000;
+        font-stretch: 100%;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe0AMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfUVwoNnq4CLz0_kJ3xzA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }</style>
+
+    <!-- Google Tag Manager -->
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WHDTQ293"></script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WHDTQ293');</script>
+    <!-- End Google Tag Manager -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JM76JQ7YLJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-JM76JQ7YLJ');
+    </script>
+    <style>@-webkit-keyframes fa-spin {
+               0% {
+                   -webkit-transform: rotate(0deg);
+                   transform: rotate(0)
+               }
+               to {
+                   -webkit-transform: rotate(359deg);
+                   transform: rotate(359deg)
+               }
+           }
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #8272c8 #f1f1f1
+    }
+
+    @font-face {
+        font-family: Nunito_Sans-Regular;
+        src: url("./media/NunitoSans-Regular-YZWA7M3Z.ttf")
+    }
+
+    html {
+        font-family: Nunito_Sans-Regular;
+        font-size: 100%
+    }
+
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%
+    }
+
+    :root {
+        --govcolor-cobalt: #4b3c8c;
+        --govcolor-black: #000000;
+        --govcolor-matterhorn: #4C4C4C;
+        --govcolor-grey: #7E7E7E;
+        --govcolor-white: #FFFFFF;
+        --govcolor-havelock-lue: #4672C8;
+        --govcolor-tropical-blue: #B5C7E9;
+        --govcolor-golden-brown: #9D7700;
+        --govcolor-sunglow: #FECC2F;
+        --govcolor-vis-vis: #FEE697;
+        --govcolor-silver: #B9B9B9;
+        --govcolor-silver-dis: #C8C8C8;
+        --govcolor-solitude: #E5ECF8;
+        --govcolor-corn-silk: #FFFAE8;
+        --govcolor-white-smoke: #F4F4F4;
+        --govcolor-portage: #83A0DA;
+        --govcolor-red: #A80521;
+        --govcolor-orange: #F0572D;
+        --govcolor-yellow: #FDAA29;
+        --govcolor-green: #158361;
+        --govcolor-tulip: #E8A045;
+        --govcolor-svg-cobalt: invert(20%) sepia(53%) saturate(3248%) hue-rotate(212deg) brightness(97%) contrast(107%);
+        --govcolor-svg-black: invert(0%) sepia(100%) saturate(16%) hue-rotate(90deg) brightness(99%) contrast(102%);
+        --govcolor-svg-matterhorn: invert(29%) sepia(0%) saturate(1044%) hue-rotate(165deg) brightness(94%) contrast(88%);
+        --govcolor-svg-grey: invert(51%) sepia(0%) saturate(7%) hue-rotate(230deg) brightness(96%) contrast(84%);
+        --govcolor-svg-white: invert(100%) sepia(100%) saturate(2%) hue-rotate(61deg) brightness(103%) contrast(101%);
+        --govcolor-svg-havelock-lue: invert(41%) sepia(68%) saturate(553%) hue-rotate(181deg) brightness(90%) contrast(89%);
+        --govcolor-svg-tropical-blue: invert(81%) sepia(24%) saturate(403%) hue-rotate(187deg) brightness(94%) contrast(93%);
+        --govcolor-svg-golden-brown: invert(37%) sepia(60%) saturate(2414%) hue-rotate(35deg) brightness(97%) contrast(101%);
+        --govcolor-svg-sunglow: invert(77%) sepia(98%) saturate(825%) hue-rotate(331deg) brightness(104%) contrast(99%);
+        --govcolor-svg-vis-vis: invert(82%) sepia(71%) saturate(278%) hue-rotate(335deg) brightness(102%) contrast(99%);
+        --govcolor-svg-silver: invert(76%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(104%) contrast(77%);
+        --govcolor-svg-silver-dis: invert(92%) sepia(0%) saturate(0%) hue-rotate(140deg) brightness(91%) contrast(83%);
+        --govcolor-svg-solitude: invert(100%) sepia(84%) saturate(1147%) hue-rotate(178deg) brightness(103%) contrast(94%);
+        --govcolor-svg-corn-silk: invert(96%) sepia(5%) saturate(1469%) hue-rotate(316deg) brightness(104%) contrast(105%);
+        --govcolor-svg-white-smoke: invert(99%) sepia(3%) saturate(16%) hue-rotate(60deg) brightness(117%) contrast(91%);
+        --govcolor-svg-portage: invert(59%) sepia(73%) saturate(228%) hue-rotate(182deg) brightness(92%) contrast(91%);
+        --govcolor-svg-red: invert(27%) sepia(63%) saturate(4192%) hue-rotate(335deg) brightness(63%) contrast(120%);
+        --govcolor-svg-orange: invert(43%) sepia(42%) saturate(1692%) hue-rotate(338deg) brightness(94%) contrast(100%);
+        --govcolor-svg-yellow: invert(66%) sepia(75%) saturate(547%) hue-rotate(339deg) brightness(103%) contrast(98%);
+        --govcolor-svg-green: invert(35%) sepia(93%) saturate(345%) hue-rotate(110deg) brightness(98%) contrast(98%);
+        --govcolor-svg-tulip: invert(65%) sepia(56%) saturate(490%) hue-rotate(351deg) brightness(93%) contrast(95%);
+        --govcolor-svg-green-hov: invert(67%) sepia(27%) saturate(184%) hue-rotate(113deg) brightness(97%) contrast(91%);
+        --govcolor-svg-red-hov: invert(69%) sepia(20%) saturate(484%) hue-rotate(302deg) brightness(88%) contrast(84%)
+    }
+
+    :root {
+        --calorimetry-blue-1: rgba(73, 61, 134, 1);
+        --calorimetry-blue-2: rgba(0, 147, 212, 1);
+        --calorimetry-blue-3: rgba(108, 228, 229, 1);
+        --calorimetry-green-1: rgba(59, 128, 77, 1);
+        --calorimetry-green-2: rgba(57, 177, 74, 1);
+        --calorimetry-green-3: rgba(169, 197, 15, 1);
+        --calorimetry-purple-1: rgba(136, 48, 171, 1);
+        --calorimetry-purple-2: rgba(203, 110, 220, 1);
+        --calorimetry-purple-3: rgba(255, 107, 215, 1);
+        --calorimetry-red-1: rgba(255, 86, 0, 1);
+        --calorimetry-red-2: rgba(234, 130, 58, 1);
+        --calorimetry-red-3: rgba(255, 194, 0, 1)
+    }
+
+    :root {
+        font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+        --font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        --surface-a: #ffffff;
+        --surface-b: #fafafa;
+        --surface-c: rgba(0, 0, 0, .04);
+        --surface-d: rgba(0, 0, 0, .12);
+        --surface-e: #ffffff;
+        --surface-f: #ffffff;
+        --text-color: rgba(0, 0, 0, .87);
+        --text-color-secondary: rgba(0, 0, 0, .6);
+        --primary-color: #3F51B5;
+        --primary-color-text: #ffffff;
+        --surface-0: #ffffff;
+        --surface-50: #fafafa;
+        --surface-100: #f5f5f5;
+        --surface-200: #eeeeee;
+        --surface-300: #e0e0e0;
+        --surface-400: #bdbdbd;
+        --surface-500: #9e9e9e;
+        --surface-600: #757575;
+        --surface-700: #616161;
+        --surface-800: #424242;
+        --surface-900: #212121;
+        --gray-50: #fafafa;
+        --gray-100: #f5f5f5;
+        --gray-200: #eeeeee;
+        --gray-300: #e0e0e0;
+        --gray-400: #bdbdbd;
+        --gray-500: #9e9e9e;
+        --gray-600: #757575;
+        --gray-700: #616161;
+        --gray-800: #424242;
+        --gray-900: #212121;
+        --content-padding: 1rem;
+        --inline-spacing: .5rem;
+        --border-radius: 4px;
+        --surface-ground: #fafafa;
+        --surface-section: #ffffff;
+        --surface-card: #ffffff;
+        --surface-overlay: #ffffff;
+        --surface-border: rgba(0, 0, 0, .12);
+        --surface-hover: rgba(0, 0, 0, .04);
+        --maskbg: rgba(0, 0, 0, .32);
+        --highlight-bg: rgba(63, 81, 181, .12);
+        --highlight-text-color: #3F51B5;
+        --focus-ring: none;
+        color-scheme: light
+    }
+
+    @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        src: local("Roboto"), local("Roboto-Regular"), url("./media/roboto-v20-latin-ext_latin-regular-LRM3ER4G.woff2") format("woff2"), url("./media/roboto-v20-latin-ext_latin-regular-ZEDEYGV7.woff") format("woff")
+    }
+
+    @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        src: local("Roboto Medium"), local("Roboto-Medium"), url("./media/roboto-v20-latin-ext_latin-500-3YTQ4ANV.woff2") format("woff2"), url("./media/roboto-v20-latin-ext_latin-500-JTUAEB44.woff") format("woff")
+    }
+
+    @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        src: local("Roboto Bold"), local("Roboto-Bold"), url("./media/roboto-v20-latin-ext_latin-700-72Q4UJBL.woff2") format("woff2"), url("./media/roboto-v20-latin-ext_latin-700-YWMTYTLY.woff") format("woff")
+    }
+
+    :root {
+        --blue-50: #f4fafe;
+        --blue-100: #cae6fc;
+        --blue-200: #a0d2fa;
+        --blue-300: #75bef8;
+        --blue-400: #4baaf5;
+        --blue-500: #2196f3;
+        --blue-600: #1c80cf;
+        --blue-700: #1769aa;
+        --blue-800: #125386;
+        --blue-900: #0d3c61;
+        --green-50: #f7faf5;
+        --green-100: #dbe8cf;
+        --green-200: #bed6a9;
+        --green-300: #a1c384;
+        --green-400: #85b15e;
+        --green-500: #689f38;
+        --green-600: #588730;
+        --green-700: #496f27;
+        --green-800: #39571f;
+        --green-900: #2a4016;
+        --yellow-50: #fffcf5;
+        --yellow-100: #fef0cd;
+        --yellow-200: #fde4a5;
+        --yellow-300: #fdd87d;
+        --yellow-400: #fccc55;
+        --yellow-500: #fbc02d;
+        --yellow-600: #d5a326;
+        --yellow-700: #b08620;
+        --yellow-800: #8a6a19;
+        --yellow-900: #644d12;
+        --cyan-50: #f2fcfd;
+        --cyan-100: #c2eff5;
+        --cyan-200: #91e2ed;
+        --cyan-300: #61d5e4;
+        --cyan-400: #30c9dc;
+        --cyan-500: #00bcd4;
+        --cyan-600: #00a0b4;
+        --cyan-700: #008494;
+        --cyan-800: #006775;
+        --cyan-900: #004b55;
+        --pink-50: #fef4f7;
+        --pink-100: #fac9da;
+        --pink-200: #f69ebc;
+        --pink-300: #f1749e;
+        --pink-400: #ed4981;
+        --pink-500: #e91e63;
+        --pink-600: #c61a54;
+        --pink-700: #a31545;
+        --pink-800: #801136;
+        --pink-900: #5d0c28;
+        --indigo-50: #f6f7fc;
+        --indigo-100: #d5d9ef;
+        --indigo-200: #b3bae2;
+        --indigo-300: #919cd5;
+        --indigo-400: #707dc8;
+        --indigo-500: #4e5fbb;
+        --indigo-600: #42519f;
+        --indigo-700: #374383;
+        --indigo-800: #2b3467;
+        --indigo-900: #1f264b;
+        --teal-50: #f2faf9;
+        --teal-100: #c2e6e2;
+        --teal-200: #91d2cc;
+        --teal-300: #61beb5;
+        --teal-400: #30aa9f;
+        --teal-500: #009688;
+        --teal-600: #008074;
+        --teal-700: #00695f;
+        --teal-800: #00534b;
+        --teal-900: #003c36;
+        --orange-50: #fffaf2;
+        --orange-100: #ffe6c2;
+        --orange-200: #ffd391;
+        --orange-300: #ffbf61;
+        --orange-400: #ffac30;
+        --orange-500: #ff9800;
+        --orange-600: #d98100;
+        --orange-700: #b36a00;
+        --orange-800: #8c5400;
+        --orange-900: #663d00;
+        --bluegray-50: #f7f9f9;
+        --bluegray-100: #d9e0e3;
+        --bluegray-200: #bbc7cd;
+        --bluegray-300: #9caeb7;
+        --bluegray-400: #7e96a1;
+        --bluegray-500: #607d8b;
+        --bluegray-600: #526a76;
+        --bluegray-700: #435861;
+        --bluegray-800: #35454c;
+        --bluegray-900: #263238;
+        --purple-50: #faf4fb;
+        --purple-100: #e7cbec;
+        --purple-200: #d4a2dd;
+        --purple-300: #c279ce;
+        --purple-400: #af50bf;
+        --purple-500: #9c27b0;
+        --purple-600: #852196;
+        --purple-700: #6d1b7b;
+        --purple-800: #561561;
+        --purple-900: #3e1046;
+        --red-50: #fef6f5;
+        --red-100: #fcd2cf;
+        --red-200: #faaea9;
+        --red-300: #f88a82;
+        --red-400: #f6675c;
+        --red-500: #f44336;
+        --red-600: #cf392e;
+        --red-700: #ab2f26;
+        --red-800: #86251e;
+        --red-900: #621b16;
+        --primary-50: #f5f6fb;
+        --primary-100: #d1d5ed;
+        --primary-200: #acb4df;
+        --primary-300: #8893d1;
+        --primary-400: #6372c3;
+        --primary-500: #3f51b5;
+        --primary-600: #36459a;
+        --primary-700: #2c397f;
+        --primary-800: #232d64;
+        --primary-900: #192048
+    }
+
+    @layer primeng {
+        * {
+            box-sizing: border-box
+        }
+    }
+
+    @layer primeng {
+    }
+
+    @layer primeng {
+        @-webkit-keyframes p-fadein {
+            0% {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+    }
+
+    @-webkit-keyframes p-icon-spin {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+        to {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg)
+        }
+    }</style>
+    <link rel="stylesheet" href="styles-OK3U2VDZ.css" media="all" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles-OK3U2VDZ.css">
+    </noscript>
+    <style>p-autocomplete {
+        width: 100%
+    }
+
+    [_nghost-ng-c123977068] .p-autocomplete {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto
+    }
+
+    .p-autocomplete input {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px
+    }
+
+    header[_ngcontent-ng-c123977068] .social-links[_ngcontent-ng-c123977068] img[_ngcontent-ng-c123977068] {
+        width: 28px;
+        height: auto
+    }
+
+    nav[_ngcontent-ng-c123977068] {
+        padding: 0
+    }
+
+    ul.navbar-nav[_ngcontent-ng-c123977068] {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .navbar-nav[_ngcontent-ng-c123977068] .nav-link[_ngcontent-ng-c123977068] {
+        color: #fff;
+        display: flex
+    }
+
+    .navbar-nav[_ngcontent-ng-c123977068] .nav-link[_ngcontent-ng-c123977068]:after {
+        color: #fff;
+        margin: auto 5px
+    }
+
+    .dropend[_ngcontent-ng-c123977068] .dropdown-toggle[_ngcontent-ng-c123977068] {
+        color: #4b3c8c;
+        margin-left: 1em
+    }
+
+    .dropdown-item[_ngcontent-ng-c123977068]:hover {
+        background-color: #4b3c8c;
+        color: #fff
+    }
+
+    .dropdown[_ngcontent-ng-c123977068] .dropdown-menu[_ngcontent-ng-c123977068] {
+        display: none
+    }
+
+    .dropdown[_ngcontent-ng-c123977068]:hover > .dropdown-menu[_ngcontent-ng-c123977068], .dropend[_ngcontent-ng-c123977068]:hover > .dropdown-menu[_ngcontent-ng-c123977068] {
+        display: block;
+        margin-left: .125em
+    }
+
+    .dropdown[_ngcontent-ng-c123977068] .nav-item.dropdown[_ngcontent-ng-c123977068] .nav-link.dropdown-toggle[_ngcontent-ng-c123977068] {
+        padding: .25rem 1rem;
+        clear: both;
+        font-weight: 400;
+        color: #212529 !important
+    }
+
+    .dropdown[_ngcontent-ng-c123977068] .nav-item.dropdown[_ngcontent-ng-c123977068] .nav-link.dropdown-toggle[_ngcontent-ng-c123977068]:focus, .dropdown[_ngcontent-ng-c123977068] .nav-item.dropdown[_ngcontent-ng-c123977068] .nav-link.dropdown-toggle[_ngcontent-ng-c123977068]:hover {
+        background-color: #4b3c8c;
+        color: #fff !important
+    }
+
+    @media screen and (min-width: 769px) {
+        .dropend[_ngcontent-ng-c123977068]:hover > .dropdown-menu[_ngcontent-ng-c123977068] {
+            position: absolute;
+            top: 0;
+            left: 100%
+        }
+
+        .dropend[_ngcontent-ng-c123977068] .dropdown-toggle[_ngcontent-ng-c123977068] {
+            margin-left: .5em
+        }
+    }
+
+    header[_ngcontent-ng-c123977068] > div[_ngcontent-ng-c123977068]:nth-child(1) > div[_ngcontent-ng-c123977068] a[_ngcontent-ng-c123977068] {
+        margin-left: 20px
+    }
+
+    header[_ngcontent-ng-c123977068] > div[_ngcontent-ng-c123977068]:nth-child(2) > div[_ngcontent-ng-c123977068] a[_ngcontent-ng-c123977068] {
+        padding: 0
+    }
+
+    header[_ngcontent-ng-c123977068] > div[_ngcontent-ng-c123977068]:nth-child(2) > div[_ngcontent-ng-c123977068]:nth-child(1) a[_ngcontent-ng-c123977068] img[_ngcontent-ng-c123977068] {
+        width: 250px
+    }
+
+    @media (max-width: 575.9px) {
+        header[_ngcontent-ng-c123977068] > div[_ngcontent-ng-c123977068]:nth-child(2) > div[_ngcontent-ng-c123977068]:nth-child(1) a[_ngcontent-ng-c123977068] img[_ngcontent-ng-c123977068] {
+            width: 180px
+        }
+
+        header[_ngcontent-ng-c123977068] > div[_ngcontent-ng-c123977068]:nth-child(2) > div[_ngcontent-ng-c123977068]:nth-child(2) a[_ngcontent-ng-c123977068] img[_ngcontent-ng-c123977068] {
+            width: 100px
+        }
+    }</style>
+    <style>footer[_ngcontent-ng-c529788788] {
+        display: flex;
+        padding: 40px;
+        gap: 25px;
+        word-wrap: break-word
+    }
+
+    footer[_ngcontent-ng-c529788788] .footer-column[_ngcontent-ng-c529788788] {
+        padding: 40px 10px;
+        border-bottom: 1px solid #FFFFFF
+    }
+
+    footer[_ngcontent-ng-c529788788] h5[_ngcontent-ng-c529788788] {
+        font-family: Nunito Sans;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23px
+    }
+
+    footer[_ngcontent-ng-c529788788] .caption-box[_ngcontent-ng-c529788788] {
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px
+    }
+
+    footer[_ngcontent-ng-c529788788] .social-links[_ngcontent-ng-c529788788] a[_ngcontent-ng-c529788788] {
+        padding-right: 20px
+    }
+
+    footer[_ngcontent-ng-c529788788] a.link-footer[_ngcontent-ng-c529788788] {
+        color: #fff !important
+    }
+
+    footer[_ngcontent-ng-c529788788] a.link-footer[_ngcontent-ng-c529788788] {
+        text-decoration: underline
+    }
+
+    footer[_ngcontent-ng-c529788788] a.link-footer[_ngcontent-ng-c529788788]:visited {
+        color: #fff !important;
+        text-decoration: none
+    }
+
+    footer[_ngcontent-ng-c529788788] a[_ngcontent-ng-c529788788] {
+        text-decoration: none
+    }
+
+    @media (min-width: 1280px) {
+        footer[_ngcontent-ng-c529788788] .footer-column[_ngcontent-ng-c529788788]:nth-child(n+2) {
+            border-left: 1px solid;
+            border-bottom: 0px solid
+        }
+
+        footer[_ngcontent-ng-c529788788] .footer-column[_ngcontent-ng-c529788788] {
+            border-bottom: 0px solid;
+            padding: 0 20px
+        }
+    }</style>
+    <style>#report-container[_ngcontent-ng-c3446586608] {
+        min-height: 100%;
+        height: 100%
+    }
+
+    .loading-container[_ngcontent-ng-c3446586608] {
+        height: auto;
+        width: 100%;
+        position: relative
+    }
+
+    .container-spinner[_ngcontent-ng-c3446586608] {
+        top: 0;
+        height: 800px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .spinner[_ngcontent-ng-c3446586608] {
+        border: 8px solid rgba(0, 0, 0, .1);
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 60px;
+        height: 60px;
+        animation: _ngcontent-ng-c3446586608_spin 1s linear infinite
+    }
+
+    .spinner[_ngcontent-ng-c3446586608] img[_ngcontent-ng-c3446586608] {
+        width: 300px;
+        height: 300px
+    }
+
+    @keyframes _ngcontent-ng-c3446586608_spin {
+        0% {
+            transform: rotate(0)
+        }
+        to {
+            transform: rotate(360deg)
+        }
+    }</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDTQ293" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<app-root _nghost-ng-c3984273398="" ng-version="18.2.1">
+    <router-outlet _ngcontent-ng-c3984273398=""></router-outlet>
+    <app-index-sinic _nghost-ng-c625524521="">
+        <div _ngcontent-ng-c625524521="" style="background-color: #17102E;">
+            <app-header-v2 _ngcontent-ng-c625524521="" _nghost-ng-c123977068="">
+                <header _ngcontent-ng-c123977068="" class="bg-secondary-cultura">
+                    <div _ngcontent-ng-c123977068="" class="bg-primary-cultura">
+                        <div _ngcontent-ng-c123977068="" class="text-left"><a _ngcontent-ng-c123977068="" role="link"
+                                                                              aria-label="Logo Gobierno de Colombia. Te llevará al inicio"
+                                                                              href="https://www.gov.co/"
+                                                                              class="navbar-brand"><img
+                                _ngcontent-ng-c123977068="" src="assets/images/logos/logo.svg" height="40" width="119"
+                                alt="Logo gov.co"></a></div>
+                    </div>
+                    <div _ngcontent-ng-c123977068=""
+                         class="container-fluid d-flex justify-content-between align-items-center bg-secondary-cultura p-4 nav-medium">
+                        <div _ngcontent-ng-c123977068="" class="col-md-6"><a _ngcontent-ng-c123977068="" href="#"
+                                                                             class="brand-medium"><img
+                                _ngcontent-ng-c123977068="" src="assets/images/logos/LOGO_SINIC_BLANCO.svg"
+                                alt="Logo Min Cultura"></a></div>
+                        <div _ngcontent-ng-c123977068=""
+                             class="col-md-6 bg-secondary-cultura d-flex justify-content-end"><a
+                                _ngcontent-ng-c123977068="" href="#" class="brand-medium"><img
+                                _ngcontent-ng-c123977068="" src="assets/images/logos/CULTURAS_BLANCO_BANDERA.svg"
+                                width="120" alt="Logo Min Cultura"></a></div>
+                    </div>
+                    <nav _ngcontent-ng-c123977068=""
+                         class="container navbar navbar-expand-lg navbar-dark bg-secondary-cultura">
+                        <div _ngcontent-ng-c123977068="" class="container-fluid">
+                            <button _ngcontent-ng-c123977068="" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span
+                                    _ngcontent-ng-c123977068="" class="navbar-toggler-icon"></span></button>
+                            <div _ngcontent-ng-c123977068="" id="navbarSupportedContent"
+                                 class="collapse navbar-collapse">
+                                <ul _ngcontent-ng-c123977068="" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li _ngcontent-ng-c123977068="" class="nav-item"><a _ngcontent-ng-c123977068=""
+                                                                                        aria-current="page"
+                                                                                        href="/que-es-sinic"
+                                                                                        class="nav-link active">¿Qué es
+                                        el SINIC?</a></li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Ministerio en
+                                        cifras </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/ejecucion_presupuestal"
+                                                                               class="dropdown-item">Ejecución
+                                                presupuestal</a></li>
+                                            <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                                    _ngcontent-ng-c123977068="" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    class="nav-link dropdown-toggle"> Convocatorias </a>
+                                                <ul _ngcontent-ng-c123977068="" class="dropdown-menu"
+                                                    style="margin-left: -288px; top: 0;">
+                                                    <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                                       href="/tableros/proyectos_apoyados"
+                                                                                       class="dropdown-item">Programa
+                                                        Nacional de Concertación</a></li>
+                                                    <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                                       href="" class="dropdown-item">Programa
+                                                        Nacional de Estímulos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/comisiones"
+                                                                               class="dropdown-item">Asistencia técnica
+                                                al territorio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Agentes del
+                                        sector </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/actores_organizaciones_y_entidades"
+                                                                               class="dropdown-item">Organizaciones y
+                                                entidades</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/agentes_culturales"
+                                                                               class="dropdown-item">Personas
+                                                naturales</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/agentes_culturales_genero"
+                                                                               class="dropdown-item">Género y
+                                                cultura</a></li>
+                                        </ul>
+                                    </li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Espacios
+                                        culturales </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/localizacion"
+                                                                               class="dropdown-item">Espacios de las
+                                                Artes, las Culturas y los Saberes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Financiación
+                                        cultural </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="/tableros/fuentes_de_financiacion"
+                                                                               class="dropdown-item">Fuentes de
+                                                financiación cultural</a></li>
+                                        </ul>
+                                    </li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Publicaciones y
+                                        estudios </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="https://siartes.mincultura.gov.co/#/home-catalogo"
+                                                                               class="dropdown-item">Publicaciones</a>
+                                            </li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="https://bancodecontenidos.mincultura.gov.co/"
+                                                                               class="dropdown-item">Banco de
+                                                Contenidos</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068="" href=""
+                                                                               class="dropdown-item">Estudios de
+                                                impacto</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="https://www.dane.gov.co/index.php/estadisticas-por-tema/cultura/economia-cultural-y-creativa"
+                                                                               class="dropdown-item">Cuenta Satélite de
+                                                Economía Cultural y Creativa</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="https://www.dane.gov.co/index.php/estadisticas-por-tema/cultura/consumo-cultural"
+                                                                               class="dropdown-item">Encuesta de consumo
+                                                cultural</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               href="https://www.mincultura.gov.co/direcciones/estrategia-desarrollo-y-emprendimiento/Paginas/servicios-informacion/observatorio-de-las-economias-en-las-culturas-artes-y-saberes.aspx"
+                                                                               class="dropdown-item">Observatorio</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li _ngcontent-ng-c123977068="" class="nav-item dropdown"><a
+                                            _ngcontent-ng-c123977068="" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false" class="nav-link dropdown-toggle"> Mapas </a>
+                                        <ul _ngcontent-ng-c123977068="" class="dropdown-menu">
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               target="_blank"
+                                                                               href="https://geoparques.icanh.gov.co"
+                                                                               class="dropdown-item">Atlas
+                                                Arqueológico</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               target="_blank"
+                                                                               href="https://alec.caroycuervo.gov.co/alec"
+                                                                               class="dropdown-item">Atlas Lingüístico -
+                                                Etnográfico de Colombia</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               target="_blank"
+                                                                               href="https://storymaps.arcgis.com/stories/ba8c994554224d09b32255965f945dd2"
+                                                                               class="dropdown-item">Colombia
+                                                Biocultural</a></li>
+                                            <li _ngcontent-ng-c123977068=""><a _ngcontent-ng-c123977068=""
+                                                                               target="_blank"
+                                                                               href="https://arcg.is/18jbLC0"
+                                                                               class="dropdown-item">Diversidad
+                                                Biocultural en el Río Magdalena</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </app-header-v2>
+            <router-outlet _ngcontent-ng-c625524521=""></router-outlet>
+
+
+
+
+
+
+
+
+            <app-footer-v2 _ngcontent-ng-c625524521="" _nghost-ng-c529788788="">
+                <footer _ngcontent-ng-c529788788="" class="bg-secondary-cultura text-white">
+                    <div _ngcontent-ng-c529788788="">
+                        <div _ngcontent-ng-c529788788="" class="row">
+                            <div _ngcontent-ng-c529788788=""
+                                 class="col-md-12 col-lg-6 col-xl-3 footer-column text-center"><img
+                                    _ngcontent-ng-c529788788="" src="assets/images/logos/logo-gov.co.png" height="28"
+                                    width="146" alt="Logo gov.co" class="mx-3"><img _ngcontent-ng-c529788788=""
+                                                                                    src="assets/images/logos/gov.co_co-footer.png"
+                                                                                    width="54" height="51"
+                                                                                    alt="Logo Colombia" class="mx-3">
+                            </div>
+                            <div _ngcontent-ng-c529788788="" class="col-md-12 col-lg-6 col-xl-3 footer-column"><h5
+                                    _ngcontent-ng-c529788788="">Ministerio de las Culturas, las Artes y los Saberes</h5>
+                                <h5 _ngcontent-ng-c529788788="">Oficina Asesora de Planeación</h5>
+                                <p _ngcontent-ng-c529788788="" class="caption-box">Calle 9 No. 8 – 31, piso 3<br
+                                        _ngcontent-ng-c529788788=""> Bogotá D.C., Colombia</p>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><b _ngcontent-ng-c529788788="">Horario
+                                    de atención:</b><br _ngcontent-ng-c529788788=""> Lunes a viernes de 8:00 <br
+                                        _ngcontent-ng-c529788788="">a.m. a 5:00 p.m. (días no festivos)</p>
+                                <div _ngcontent-ng-c529788788="" class="social-links"><a _ngcontent-ng-c529788788=""
+                                                                                         href="http://www.youtube.com/user/Mincultura?feature=mhw4"
+                                                                                         target="_blank"
+                                                                                         alt="Youtube"><img
+                                        _ngcontent-ng-c529788788="" src="assets/images/redes/youtube.png"
+                                        alt="Youtube Ministerio de Cultura" class="nav-medium-svg"></a><a
+                                        _ngcontent-ng-c529788788="" href="http://www.instagram.com/mincultura/"
+                                        target="_blank" alt="Instagram"><img _ngcontent-ng-c529788788=""
+                                                                             src="assets/images/redes/instagram.png"
+                                                                             alt="Instagram Ministerio de Cultura"
+                                                                             class="nav-medium-svg"></a><a
+                                        _ngcontent-ng-c529788788=""
+                                        href="http://www.facebook.com/pages/Ministerio-de-Cultura/" target="_blank"
+                                        alt="Facebook"><img _ngcontent-ng-c529788788=""
+                                                            src="assets/images/redes/facebook.png"
+                                                            alt="Facebook Ministerio de Cultura" class="nav-medium-svg"></a><a
+                                        _ngcontent-ng-c529788788="" href="http://www.twitter.com/mincultura"
+                                        target="_blank"><img _ngcontent-ng-c529788788=""
+                                                             src="assets/images/redes/twitter.png" alt="X"
+                                                             class="nav-medium-svg"></a><a _ngcontent-ng-c529788788=""
+                                                                                           href="#" target="_blank"
+                                                                                           alt="Whatsapp Ministerio de Cultura"><img
+                                        _ngcontent-ng-c529788788="" src="assets/images/redes/whatsapp.png"
+                                        alt="Whatsapp Ministerio de Cultura" class="nav-medium-svg"></a><a
+                                        _ngcontent-ng-c529788788="" href="https://www.tiktok.com/@minculturas"
+                                        target="_blank" alt="tiktok"><img _ngcontent-ng-c529788788=""
+                                                                          src="assets/images/redes/tiktok.png"
+                                                                          alt="tiktok Ministerio de Cultura"
+                                                                          class="nav-medium-svg"></a></div>
+                            </div>
+                            <div _ngcontent-ng-c529788788="" class="col-md-12 col-lg-6 col-xl-3 footer-column"><h5
+                                    _ngcontent-ng-c529788788="">Contacto Correspondencia:</h5>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><b _ngcontent-ng-c529788788="">Presencial:</b>
+                                    Lunes a viernes de 8:00 a.m. a 3:00 p.m. jornada continua <br
+                                            _ngcontent-ng-c529788788="">Casa Abadí­a, Calle 8 #8a-31</p>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><b _ngcontent-ng-c529788788="">Virtual:</b>
+                                    correo oficial - <br _ngcontent-ng-c529788788=""><span _ngcontent-ng-c529788788=""
+                                                                                           class="text-decoration"> sinic@mincultura.gov.co </span><br
+                                            _ngcontent-ng-c529788788="">(los correos que se reciban después de las 5:00
+                                    p. m., se radicarán el siguiente dí­a hábil)</p>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><b _ngcontent-ng-c529788788="">Teléfono:</b>
+                                    +57 (601) 3424100 ext. 1397 y 1391<br _ngcontent-ng-c529788788=""><b
+                                            _ngcontent-ng-c529788788="">Fax:</b> (601) 3816353 ext. 1183<br
+                                            _ngcontent-ng-c529788788=""><b _ngcontent-ng-c529788788="">Lí­nea
+                                        gratuita:</b> 018000 93808 </p></div>
+                            <div _ngcontent-ng-c529788788="" class="col-md-12 col-lg-6 col-xl-3 footer-column"><h5
+                                    _ngcontent-ng-c529788788="">Servicios a la Ciudadanía</h5>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><a _ngcontent-ng-c529788788=""
+                                                                                      href="https://mng.mincultura.gov.co/globales/Paginas/Notificaciones-Judiciales.aspx"
+                                                                                      class="link-footer">Notificaciones
+                                    judiciales</a><br _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788=""
+                                                                                     href="https://www.mincultura.gov.co/atencion-y-servicio-a-la-ciudadania/Paginas/atencion-pqrs.aspx"
+                                                                                     class="link-footer">PQRSD</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788=""
+                                                                       href="https://mng.mincultura.gov.co/globales/Paginas/Preguntas-frecuentes.aspx"
+                                                                       class="link-footer">Preguntas Frecuentes</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788=""
+                                                                       href="https://mng.mincultura.gov.co/globales/Paginas/Glosario.aspx"
+                                                                       class="link-footer">Glosario</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788=""
+                                                                       href="https://www.mincultura.gov.co/atencion-y-servicio-a-la-ciudadania/Paginas/tramites-y-servicios.aspx"
+                                                                       class="link-footer">Trámites y servicios</a></p>
+                                <h5 _ngcontent-ng-c529788788="">Acerca del sitio</h5>
+                                <p _ngcontent-ng-c529788788="" class="caption-box"><a _ngcontent-ng-c529788788=""
+                                                                                      href="#" class="link-footer">Políticas</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788="" href="#"
+                                                                       class="link-footer">Política de privacidad y
+                                    protección de datos</a><br _ngcontent-ng-c529788788=""><a
+                                        _ngcontent-ng-c529788788="" href="#" class="link-footer">Mapa del sitio</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788="" href="#"
+                                                                       class="link-footer">Términos y condiciones</a><br
+                                        _ngcontent-ng-c529788788=""><a _ngcontent-ng-c529788788="" href="#"
+                                                                       class="link-footer">Accesibilidad</a></p><br
+                                        _ngcontent-ng-c529788788="">
+                                <p _ngcontent-ng-c529788788="" class="caption-box">Copyright © 2024</p></div>
+                        </div>
+                    </div>
+                </footer>
+            </app-footer-v2>
+        </div>
+    </app-index-sinic><!----></app-root>
+<!-- js bootstrap -->
+<!-- utils.js BDC -->
+<img src="Pie.png" height="674" width="2536">
+</body>
+</html>

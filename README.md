@@ -118,17 +118,22 @@ The story starts with a controlled, structured introduction and gradually opens 
 
 ---
 
-## 🗂️ Project Structure
-
+## 🚀 Running Locally
+ 
+Download all files and place them in the **same folder**. All data files, JavaScript scripts, images, and the HTML files must live at the same directory level:
+ 
 ```
 proyecto_va/
-├── index.html          # Main scrollytelling page
-├── Encabezado.png      # Institutional header image
-├── Sankey final.svg    # Sankey diagram asset
-├── Pie.png             # Footer / contact block
-└── src/                # D3.js scripts (charts, maps, scroll logic)
+├── index.html
+├── main.html
+├── main.js              
+├── *.json / *.geojson    # Data files
+├── *.png / *.svg     # Images and assets
+└── ...
 ```
-
+ 
+Then simply open `index.html` in your browser. No build step or server required.
+ 
 ---
 
 ## 📅 Development Timeline
